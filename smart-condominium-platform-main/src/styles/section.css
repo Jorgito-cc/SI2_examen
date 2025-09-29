@@ -1,0 +1,147 @@
+
+
+
+/* Reusa los tokens de header.css; si no los tienes, estos valores sirven por defecto */
+:root{
+  --bg-hero: #f7f9fe;
+  --text: #0f172a;
+  --muted: #64748b;
+  --brand: #2563eb;
+  --brand-600:#1d4ed8;
+  --border:#e5e7eb;
+  --shadow: 0 20px 60px rgba(37, 99, 235, 0.15);
+}
+
+/* ===== Block: section ===== */
+.section{
+  background: linear-gradient(180deg, var(--bg-hero), #fff 60%);
+}
+
+/* grid principal */
+.section__container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 16px 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+@media (min-width: 900px){
+  .section__container{
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 40px;
+    padding-top: 88px;
+  }
+}
+
+/* texto */
+.section__title{
+  font-size: clamp(28px, 5vw, 46px);
+  line-height: 1.05;
+  letter-spacing: -.5px;
+  color: var(--text);
+  font-weight: 800;
+  margin: 0 0 14px;
+}
+.section__subtitle{
+  color: var(--muted);
+  font-size: clamp(14px, 2.2vw, 18px);
+  margin: 0 0 20px;
+}
+.section__ctas{ display:flex; gap:12px; flex-wrap:wrap; }
+
+/* media */
+.section__media{ position: relative; min-height: 280px; }
+@media (min-width: 980px){ .section__media{ min-height: 360px; } }
+
+/* monitor mock */
+.mock.monitor{
+  background: #fff;
+  border: 2px solid #d9e6ff;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  width: min(520px, 100%);
+  height: 260px;
+  margin-left: auto;
+}
+.monitor__kpis{
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 8px; margin-bottom: 10px;
+}
+.chip{
+  background: #eef4ff;
+  color: #123b9e;
+  border: 1px solid #dbe7ff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}
+.monitor__table{ display: grid; gap: 8px; margin-top: 12px; }
+.bar{ height: 10px; border-radius: 6px; background:#e6eefc; display:block; }
+.bar--w70{ width:70%; } .bar--w55{ width:55%; }
+.bar--w40{ width:40%; } .bar--w30{ width:30%; }
+.monitor__stand{
+  width: 120px; height: 8px; background: #cfdcff; border-radius: 999px;
+  margin: 16px auto 0;
+}
+
+/* teléfono mock */
+.mock.phone{
+  position: absolute; right: -8px; bottom: -14px;
+  width: 180px; height: 320px;
+  background: #fff; border: 2px solid #d9e6ff;
+  border-radius: 24px; box-shadow: var(--shadow); padding: 12px;
+}
+@media (max-width: 420px){ .mock.phone{ display:none; } }
+.phone__row{
+  display:flex; align-items:center; gap:8px;
+  padding: 8px 0; border-bottom: 1px dashed #e7efff;
+}
+.dot{ width:8px; height:8px; border-radius:50%; background:#b7c7f7; }
+.line{ flex:1; height:8px; border-radius:6px; background:#e6eefc; }
+.line--w60{ max-width:60%; } .line--w45{ max-width:45%; }
+.tag{
+  background:#eaf2ff; color:#1a43ba; font-weight:700;
+  font-size:10px; padding:4px 6px; border-radius:8px; border:1px solid #dbe7ff;
+}
+.tag--muted{ background:#f1f5ff; color:#7489c4; }
+.phone__footer{
+  display:flex; justify-content:space-between; align-items:center; padding-top:10px;
+}
+.pill{
+  font-size:10px; padding:4px 8px; border-radius:999px;
+  background:#eef2ff; color:#223a8f; border:1px solid #dbe7ff;
+}
+.cta{
+  font-size:11px; font-weight:700; color:#fff; background:var(--brand);
+  padding:6px 10px; border-radius:10px;
+}
+
+/* features */
+.section__features{
+  max-width: 1100px; margin: 18px auto 0;
+  padding: 20px 16px 60px; display:grid; gap:18px; grid-template-columns:1fr;
+}
+@media (min-width: 780px){
+  .section__features{ grid-template-columns: repeat(3, 1fr); gap: 22px; }
+}
+.section__feature{
+  background:#fff; border:1px solid var(--border);
+  border-radius: 16px; padding: 18px 16px;
+}
+.section__feature-icon{ width:28px; height:28px; }
+.section__feature-title{ margin:8px 0 6px; font-size:16px; font-weight:700; color:var(--text); }
+.section__feature-text{ margin:0; color:var(--muted); font-size:14px; }
+
+/* Si no tienes .btn en tu proyecto, descomenta este bloque:
+.btn{ display:inline-flex; align-items:center; justify-content:center;
+  height:44px; padding:0 16px; border-radius:12px; font-weight:700;
+  text-decoration:none; border:1px solid transparent; }
+.btn--primary{ background:var(--brand); color:#fff; }
+.btn--primary:hover{ background:var(--brand-600); }
+.btn--ghost{ background:#fff; color:var(--text); border-color:var(--border); }
+.btn--ghost:hover{ background:#f8fafc; } */

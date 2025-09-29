@@ -1,0 +1,20 @@
+﻿# Entorno virtual y variables
+venv/
+.env
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos local
+db.sqlite3
+
+# Archivos generados por Django
+/staticfiles/
+/media/
+
+# Configuración de IDEs
+.vscode/
+.idea/
