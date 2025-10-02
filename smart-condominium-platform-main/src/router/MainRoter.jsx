@@ -13,6 +13,7 @@ import ResidentesPage from "../admin/pages/ResidentesPage";
 import { FormPersonal } from "../admin/pages/FormPersonal";
 import { FormUnidades } from "../admin/pages/FormUnidades";
 import { FormResidentes } from "../admin/pages/FormResidentes";
+import NotificacionesPage from "../admin/pages/Notificacion";
 
 export default function MainRouter() {
   return (
@@ -45,6 +46,8 @@ export default function MainRouter() {
           <Route path="registrarunidades" element={<FormUnidades />} />
 
           <Route path="registrarresidentes" element={<FormResidentes />} />
+                    <Route path="notificaciones" element={<NotificacionesPage />} />
+
 
         </Route>
 
