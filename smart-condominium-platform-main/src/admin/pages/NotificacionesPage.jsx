@@ -398,6 +398,7 @@ export default function NotificacionesPage() {
               >
                 {isEditing ? "Guardar" : "Crear"}
               </button>
+            
             </div>
           </div>
         </div>
