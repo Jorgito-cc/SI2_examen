@@ -82,8 +82,7 @@ export const sections = [
     icon: <FaBullhorn />,
     title: "Comunicación",
     items: [
-      { label: "Avisos/Comunicados", to: "/admin/avisos" },               // CU14
-      { label: "Notificaciones Push", to: "/admin/notificaciones" },      // CU24 (motor/plantillas)
+      { label: "Notificaciones ", to: "/admin/notificaciones" },      // CU24 (motor/plantillas)
     ],
   },
   {
