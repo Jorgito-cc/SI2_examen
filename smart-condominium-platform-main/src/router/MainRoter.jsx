@@ -13,7 +13,7 @@ import ResidentesPage from "../admin/pages/ResidentesPage";
 import { FormPersonal } from "../admin/pages/FormPersonal";
 import { FormUnidades } from "../admin/pages/FormUnidades";
 import { FormResidentes } from "../admin/pages/FormResidentes";
-import NotificacionesPage from "../admin/pages/Notificacion";
+import NotificacionesPage from "../admin/pages/NotificacionesPage";
 
 export default function MainRouter() {
   return (
@@ -24,13 +24,13 @@ export default function MainRouter() {
           {/* Ejemplos de páginas públicas */}
 
           <Route path="login" element={<Login />} />
-        </Route> {/* paskdmksdfmoferoiom */}
-
+        </Route>{" "}
+        {/* paskdmksdfmoferoiom */}
         {/* Admin */}
         <Route
           path="/admin"
           element={
-            <ProtectedRoutes  allowedRoles={["ADMINISTRADOR"]}>
+            <ProtectedRoutes allowedRoles={["ADMINISTRADOR"]}>
               <AdminLayout />
             </ProtectedRoutes>
           }
@@ -41,16 +41,13 @@ export default function MainRouter() {
           <Route path="residentespages" element={<ResidentesPage />} />
 
           <Route path="unidadpage" element={<UnidadesPage />} />
-                    <Route path="registrarpersonal" element={<FormPersonal />} />
+          <Route path="registrarpersonal" element={<FormPersonal />} />
 
           <Route path="registrarunidades" element={<FormUnidades />} />
 
           <Route path="registrarresidentes" element={<FormResidentes />} />
-                    <Route path="notificaciones" element={<NotificacionesPage />} />
-
-
+          <Route path="notificaciones" element={< NotificacionesPage/>} />
         </Route>
-
         {/* Guardia */}
         <Route
           path="/guardia"
