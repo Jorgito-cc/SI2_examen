@@ -58,7 +58,7 @@ export const sections = [
     title: "Unidades",
     items: [
       { label: "Unidades Habitacionales", to: "/admin/unidadpage" },        // CU6
-            { label: "Registrar Unidades Habitacionales", to: "/admin/registrarunidades" },        // CU6
+            { label: "Registrar Unidades Habitacionales", to: "/admin/registrarunidades" },        // CU6asdqefwfaasd
 
       { label: "Integrantes de Unidad", to: "/admin/residentespages" },       // CU9
             { label: "Registrar Integrantes de Unidad", to: "/admin/registrarresidentes" },       // CU9
