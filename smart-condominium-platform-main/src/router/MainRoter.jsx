@@ -24,7 +24,7 @@ export default function MainRouter() {
           {/* Ejemplos de páginas públicas */}
 
           <Route path="login" element={<Login />} />
-        </Route>
+        </Route> {/* paskdmksdfmoferoiom */}
 
         {/* Admin */}
         <Route
